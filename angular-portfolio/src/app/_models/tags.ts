@@ -9,6 +9,8 @@ export class Tag {
     static readonly HTML = new Tag('HTML5', 'green');
     static readonly CSS = new Tag('CSS', 'black');
     static readonly EXPRESSJS = new Tag('ExpressJS', 'indigo');
+    static readonly MYSQL = new Tag('MySQL', 'teal');
+    static readonly PHPMYADMIN = new Tag('PHPMyAdmin', 'olive');
     
     
     private constructor(private readonly key: string, 
