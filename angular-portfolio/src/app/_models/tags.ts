@@ -7,7 +7,7 @@ export class Tag {
     static readonly POSTGRESQL = new Tag('PostgreSQL', 'cyan');
     static readonly PHP = new Tag('PHP', 'purple');
     static readonly HTML = new Tag('HTML5', 'green');
-    static readonly CSS = new Tag('CSS', 'black');
+    static readonly CSS = new Tag('CSS3', 'black');
     static readonly EXPRESSJS = new Tag('ExpressJS', 'indigo');
     static readonly MYSQL = new Tag('MySQL', 'teal');
     static readonly PHPMYADMIN = new Tag('PHPMyAdmin', 'olive');
