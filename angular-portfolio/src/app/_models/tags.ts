@@ -11,6 +11,7 @@ export class Tag {
     static readonly EXPRESSJS = new Tag('ExpressJS', 'indigo');
     static readonly MYSQL = new Tag('MySQL', 'teal');
     static readonly PHPMYADMIN = new Tag('PHPMyAdmin', 'olive');
+    static readonly TYPESCRIPT = new Tag('TypeScript', 'pink');
     
     
     private constructor(private readonly key: string, 

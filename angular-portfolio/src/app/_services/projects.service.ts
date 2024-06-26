@@ -55,4 +55,22 @@ export class ProjectsService {
     return project;
 
   }
+  getProjectsByFilter(filterTags: Tag[]) {
+
+    let filteredProjects: Project[] = [];
+    this.portfolioCard.forEach(function (project) {
+      let foundAll = true;
+
+      filterTags.forEach(function (filterTag) {
+        if (project.tags.includes(filterTag) == false) {
+          foundAll = false;
+        }
+      });
+
+      if (foundAll) {
+        filteredProjects.push(project);
+      }
+    });
+    return filteredProjects;
+  }
 }
