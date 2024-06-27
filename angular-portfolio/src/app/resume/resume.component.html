@@ -1,1 +1,198 @@
-<p>resume works!</p>
+<div class="container text-center">
+  <button class="btn btn-primary mb-5 shadow border" (click)="downloadFile()">
+    Download PDF Curriculum Vitae
+  </button>
+
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isWorkExpOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden">+</div>
+          <div class="btn-link">Work Experience</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isWorkExpOpen" style="color: white">+</div>
+            <div *ngIf="isWorkExpOpen" style="color: white">-</div>
+          </div>
+        </button>
+
+        <div style="text-align: left">
+          <h2 class="mb-1">Full Stack Software Developer</h2>
+          <h3 class="text-primary">Valoores</h3>
+          <h6 class="text-info">Banking & Retail</h6>
+          <h4 class="text-secondary-emphasis">Baouchriyeh, Mount Lebanon</h4>
+          <h5 class="text-secondary">Febraury 2022 - January 2024</h5>
+          <ul>
+            <li class="mb-1">
+              Maintained and optimized web applications using Angular and JSP on
+              the frontend, and Java Spring Boot and Java Spring MVC on the
+              backend, integrated Oracle Database , ensuring high performance
+              and user responsiveness.
+            </li>
+            <li class="mb-1">
+              Efficiently managed client requests, converting them into
+              practical, functional solutions tailored to business needs.
+            </li>
+            <li class="mb-1">
+              Developed clean, efficient code in accordance with specifications,
+              utilizing SonarQube and Veracode to ensure best practices and code
+              quality.
+            </li>
+            <li class="mb-1">
+              Collaborated closely with developers, UX designers, and analysts,
+              utilizing Microsoft Teams for communication and SVN for version
+              control, ensuring seamless integration and optimal team
+              performance.
+            </li>
+            <li class="mb-1">
+              Proactively identified areas for improvement in existing programs
+              and develop strategic modifications to enhance system efficiency
+              and user functionality.
+            </li>
+            <li>
+              Crafted detailed technical documentation utilizing Microsoft Word
+              and Google Docs, ensuring precise communication and optimal
+              knowledge transfer for reference and reporting purposes.
+            </li>
+          </ul>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isEducationOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden">+</div>
+          <div class="btn-link">Education</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isEducationOpen" style="color: white">+</div>
+            <div *ngIf="isEducationOpen" style="color: white">-</div>
+          </div>
+        </button>
+        <div style="text-align: left">
+          <h2 class="mb-1">Bachelor's of Science in Computer Science</h2>
+          <h3 class="text-primary">Lebanese International University (LIU)</h3>
+          <h5 class="text-secondary">Class of 2022</h5>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isCertificatesOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden">+</div>
+          <div class="btn-link">Certificates</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isCertificatesOpen" style="color: white">+</div>
+            <div *ngIf="isCertificatesOpen" style="color: white">-</div>
+          </div>
+        </button>
+        <div style="text-align: left">
+          <h2 class="text-primary">Cisco Networking Academy</h2>
+          <h3>Fundamentals of Networking Technologies</h3>
+          <ul>
+            <li>Obtained on the 14th of Febraury, 2021</li>
+            <li>CCNA R&S: Introduction to Networks</li>
+            <li>#CCNA1_01D_F20</li>
+          </ul>
+          <h3>CCNA R&S: Computer Networks</h3>
+          <ul>
+            <li>Obtained on the 13th of July, 2021</li>
+            <li>CCNAv7: Switching, Routing, and Wireless Essentials</li>
+            <li>#CCNA2_06A_S21</li>
+          </ul>
+          <h3>Internetworking and Routing protocols</h3>
+          <ul>
+            <li>CCNA R&S: Scaling Networks</li>
+            <li>Obtained on the 20th of August, 2022</li>
+            <li>#CCNA3-01A-S21-22</li>
+          </ul>
+          <h3>Introduction to Computers</h3>
+          <ul>
+            <li>Obtained on the 26th of November, 2019</li>
+            <li>#Cisco2_01F-F19</li>
+          </ul>
+          <hr />
+          <h2 class="text-primary">Microsoft IT Academy</h2>
+          <h3>Microsoft Office Specialist: Word 2010</h3>
+          <ul>
+            <li>Obtained in July 2012</li>
+          </ul>
+          <hr />
+          <h2 class="text-primary">Succeed & Achieve Learning Center</h2>
+          <h3>Business English</h3>
+          <ul>
+            <li>Obtained in Febraury 2022</li>
+          </ul>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isSkillsOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden">+</div>
+          <div class="btn-link">Skills</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isSkillsOpen" style="color: white">+</div>
+            <div *ngIf="isSkillsOpen" style="color: white">-</div>
+          </div>
+        </button>
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h3 class="text-primary">Programming Languages</h3>
+            <ul>
+              <li>Java</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+              <li>CSS3</li>
+              <li>Java Server Pages (JSP)</li>
+            </ul>
+            <hr />
+            <h3 class="text-primary">Markup Languages</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>XML</li>
+            </ul>
+            <hr />
+            <h3 class="text-primary">Frameworks</h3>
+            <ul>
+              <li>Angular</li>
+              <li>Spring Boot</li>
+              <li>Spring MVC</li>
+              <li>Apache Struts</li>
+              <li>MyBatis</li>
+              <li>iBATIS</li>
+              <li>NodeJS</li>
+            </ul>
+            <hr />
+            <h3 class="text-primary">Databases</h3>
+            <ul>
+              <li>Oracle</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+            </ul>
+            <hr />
+            <h3 class="text-primary">Version Control</h3>
+            <ul>
+              <li>SVN</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isLanguagesOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden">+</div>
+          <div class="btn-link">Languages</div>
+          <div style="width: 10.95px">
+            <div *ngIf="!isLanguagesOpen" style="color: white">+</div>
+            <div *ngIf="isLanguagesOpen" style="color: white">-</div>
+          </div>
+        </button>
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h3 class="text-primary">Arabic</h3>
+            <h4 class="text-secondary">Native Proficiency</h4>
+            <hr />
+            <h3 class="text-primary">English</h3>
+            <h4 class="text-secondary">Professional Proficiency</h4>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>
