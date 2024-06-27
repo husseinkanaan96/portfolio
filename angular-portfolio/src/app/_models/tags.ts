@@ -1,17 +1,17 @@
 export class Tag {
-    static readonly ANGULAR = new Tag('Angular', 'red');
-    static readonly SPRINGBOOT = new Tag('Spring Boot', 'orange');
-    static readonly NODEJS = new Tag('NodeJs', 'grey');
-    static readonly JAVASCRIPT = new Tag('JavaScript', 'maroon');
-    static readonly BOOTSTRAP = new Tag('Bootstrap', 'blue');
-    static readonly POSTGRESQL = new Tag('PostgreSQL', 'cyan');
-    static readonly PHP = new Tag('PHP', 'purple');
-    static readonly HTML = new Tag('HTML5', 'green');
+    static readonly ANGULAR = new Tag('Angular', 'black');
+    static readonly SPRINGBOOT = new Tag('Spring Boot', 'black');
+    static readonly NODEJS = new Tag('NodeJs', 'black');
+    static readonly JAVASCRIPT = new Tag('JavaScript', 'black');
+    static readonly BOOTSTRAP = new Tag('Bootstrap', 'black');
+    static readonly POSTGRESQL = new Tag('PostgreSQL', 'black');
+    static readonly PHP = new Tag('PHP', 'black');
+    static readonly HTML = new Tag('HTML5', 'black');
     static readonly CSS = new Tag('CSS3', 'black');
-    static readonly EXPRESSJS = new Tag('ExpressJS', 'indigo');
-    static readonly MYSQL = new Tag('MySQL', 'teal');
-    static readonly PHPMYADMIN = new Tag('PHPMyAdmin', 'olive');
-    static readonly TYPESCRIPT = new Tag('TypeScript', 'pink');
+    static readonly EXPRESSJS = new Tag('ExpressJS', 'black');
+    static readonly MYSQL = new Tag('MySQL', 'black');
+    static readonly PHPMYADMIN = new Tag('PHPMyAdmin', 'black');
+    static readonly TYPESCRIPT = new Tag('TypeScript', 'black');
     
     
     private constructor(private readonly key: string, 

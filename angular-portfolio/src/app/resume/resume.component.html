@@ -1,14 +1,14 @@
 <div class="container text-center">
-  <button class="btn btn-primary mb-5 shadow border" (click)="downloadFile()">
+  <button class="btn btn-warning mb-5 shadow border" (click)="downloadFile()">
     Download PDF Curriculum Vitae
   </button>
 
   <div class="pb-2">
     <accordion [isAnimated]="true" class="shadow">
       <accordion-group [(isOpen)]="isWorkExpOpen">
-        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <button class="btn btn-warning justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden">+</div>
-          <div class="btn-link">Work Experience</div>
+          <div class="btn-link" style="font-weight:bold;">Work Experience</div>
           <div style="width: 10.95px">
             <div *ngIf="!isWorkExpOpen" style="color: white">+</div>
             <div *ngIf="isWorkExpOpen" style="color: white">-</div>
@@ -17,8 +17,8 @@
 
         <div style="text-align: left">
           <h2 class="mb-1">Full Stack Software Developer</h2>
-          <h3 class="text-primary">Valoores</h3>
-          <h6 class="text-info">Banking & Retail</h6>
+          <h3 class="text-secondary-emphasis">Valoores</h3>
+          <h6 class="text-secondary-emphasis">Banking & Retail</h6>
           <h4 class="text-secondary-emphasis">Baouchriyeh, Mount Lebanon</h4>
           <h5 class="text-secondary">Febraury 2022 - January 2024</h5>
           <ul>
@@ -60,7 +60,7 @@
       <accordion-group [(isOpen)]="isEducationOpen">
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden">+</div>
-          <div class="btn-link">Education</div>
+          <div class="btn-link" style="font-weight:bold;">Education</div>
           <div style="width: 10.95px">
             <div *ngIf="!isEducationOpen" style="color: white">+</div>
             <div *ngIf="isEducationOpen" style="color: white">-</div>
@@ -68,7 +68,7 @@
         </button>
         <div style="text-align: left">
           <h2 class="mb-1">Bachelor's of Science in Computer Science</h2>
-          <h3 class="text-primary">Lebanese International University (LIU)</h3>
+          <h3 class="text-secondary-emphasis">Lebanese International University (LIU)</h3>
           <h5 class="text-secondary">Class of 2022</h5>
         </div>
       </accordion-group>
@@ -76,14 +76,14 @@
       <accordion-group [(isOpen)]="isCertificatesOpen">
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden">+</div>
-          <div class="btn-link">Certificates</div>
+          <div class="btn-link" style="font-weight:bold;">Certificates</div>
           <div style="width: 10.95px">
             <div *ngIf="!isCertificatesOpen" style="color: white">+</div>
             <div *ngIf="isCertificatesOpen" style="color: white">-</div>
           </div>
         </button>
         <div style="text-align: left">
-          <h2 class="text-primary">Cisco Networking Academy</h2>
+          <h2 class="text-secondary-emphasis">Cisco Networking Academy</h2>
           <h3>Fundamentals of Networking Technologies</h3>
           <ul>
             <li>Obtained on the 14th of Febraury, 2021</li>
@@ -108,13 +108,13 @@
             <li>#Cisco2_01F-F19</li>
           </ul>
           <hr />
-          <h2 class="text-primary">Microsoft IT Academy</h2>
+          <h2 class="text-secondary-emphasis">Microsoft IT Academy</h2>
           <h3>Microsoft Office Specialist: Word 2010</h3>
           <ul>
             <li>Obtained in July 2012</li>
           </ul>
           <hr />
-          <h2 class="text-primary">Succeed & Achieve Learning Center</h2>
+          <h2 class="text-secondary-emphasis">Succeed & Achieve Learning Center</h2>
           <h3>Business English</h3>
           <ul>
             <li>Obtained in Febraury 2022</li>
@@ -125,7 +125,7 @@
       <accordion-group [(isOpen)]="isSkillsOpen">
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden">+</div>
-          <div class="btn-link">Skills</div>
+          <div class="btn-link" style="font-weight:bold;">Skills</div>
           <div style="width: 10.95px">
             <div *ngIf="!isSkillsOpen" style="color: white">+</div>
             <div *ngIf="isSkillsOpen" style="color: white">-</div>
@@ -133,7 +133,7 @@
         </button>
         <div class="row" style="text-align: left">
           <div class="col">
-            <h3 class="text-primary">Programming Languages</h3>
+            <h3 class="text-secondary-emphasis">Programming Languages</h3>
             <ul>
               <li>Java</li>
               <li>TypeScript</li>
@@ -142,13 +142,13 @@
               <li>Java Server Pages (JSP)</li>
             </ul>
             <hr />
-            <h3 class="text-primary">Markup Languages</h3>
+            <h3 class="text-secondary-emphasis">Markup Languages</h3>
             <ul>
               <li>HTML5</li>
               <li>XML</li>
             </ul>
             <hr />
-            <h3 class="text-primary">Frameworks</h3>
+            <h3 class="text-secondary-emphasis">Frameworks</h3>
             <ul>
               <li>Angular</li>
               <li>Spring Boot</li>
@@ -159,14 +159,14 @@
               <li>NodeJS</li>
             </ul>
             <hr />
-            <h3 class="text-primary">Databases</h3>
+            <h3 class="text-secondary-emphasis">Databases</h3>
             <ul>
               <li>Oracle</li>
               <li>PostgreSQL</li>
               <li>MySQL</li>
             </ul>
             <hr />
-            <h3 class="text-primary">Version Control</h3>
+            <h3 class="text-secondary-emphasis">Version Control</h3>
             <ul>
               <li>SVN</li>
               <li>GitHub</li>
@@ -177,7 +177,7 @@
       <accordion-group [(isOpen)]="isLanguagesOpen">
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden">+</div>
-          <div class="btn-link">Languages</div>
+          <div class="btn-link" style="font-weight:bold;">Languages</div>
           <div style="width: 10.95px">
             <div *ngIf="!isLanguagesOpen" style="color: white">+</div>
             <div *ngIf="isLanguagesOpen" style="color: white">-</div>
@@ -185,10 +185,10 @@
         </button>
         <div class="row" style="text-align: left">
           <div class="col">
-            <h3 class="text-primary">Arabic</h3>
+            <h3 class="text-secondary-emphasis">Arabic</h3>
             <h4 class="text-secondary">Native Proficiency</h4>
             <hr />
-            <h3 class="text-primary">English</h3>
+            <h3 class="text-secondary-emphasis">English</h3>
             <h4 class="text-secondary">Professional Proficiency</h4>
           </div>
         </div>

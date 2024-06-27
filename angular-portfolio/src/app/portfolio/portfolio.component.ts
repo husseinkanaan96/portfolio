@@ -12,7 +12,7 @@ import { ProjectsService } from '../_services/projects.service';
 export class PortfolioComponent implements OnInit {
   portfolioCard = {} as Project[];
 
-  isCollapsed: boolean = false;
+  isCollapsed: boolean = true;
   filtering: boolean = false;
 
   javascript: boolean = false;
