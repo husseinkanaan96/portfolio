@@ -1,17 +1,10 @@
 <div class="container">
   <div class="mb-2">
     <div>
-      <button
-        class="btn btn-outline-primary mb-2 me-2"
-        (click)="isCollapsed = !isCollapsed"
-      >
+      <button class="btn btn-outline-primary mb-2 me-2" (click)="isCollapsed = !isCollapsed">
         Filter
       </button>
-      <button
-        class="btn btn-outline-secondary mb-2"
-        (click)="resetFilters()"
-        [hidden]="!filtering"
-      >
+      <button class="btn btn-outline-secondary mb-2" (click)="resetFilters()" [hidden]="!filtering">
         Reset
       </button>
     </div>
@@ -23,57 +16,28 @@
               <small><b>Languages:</b></small>
               <div class="form-group">
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="php"
-                    (change)="filter()"
-                    name="php"
-                  />
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="php"
+                    (change)="filter()" name="php" />
                   <label for="" class="form-check-label small">PHP</label>
                 </div>
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="javascript"
-                    (change)="filter()"
-                    name="javascript"
-                  />
-                  <label for="" class="form-check-label small"
-                    >JavaScript</label
-                  >
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="javascript"
+                    (change)="filter()" name="javascript" />
+                  <label for="" class="form-check-label small">JavaScript</label>
                 </div>
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="typescript"
-                    (change)="filter()"
-                    name="typescript"
-                  />
-                  <label for="" class="form-check-label small"
-                    >TypeScript</label
-                  >
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="typescript"
+                    (change)="filter()" name="typescript" />
+                  <label for="" class="form-check-label small">TypeScript</label>
                 </div>
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="html"
-                    (change)="filter()"
-                    name="typescript"
-                  />
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="html"
+                    (change)="filter()" name="typescript" />
                   <label for="" class="form-check-label small">HTML5</label>
                 </div>
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="css"
-                    (change)="filter()"
-                    name="css"
-                  />
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="css"
+                    (change)="filter()" name="css" />
                   <label for="" class="form-check-label small">CSS3</label>
                 </div>
               </div>
@@ -82,56 +46,29 @@
               <small><b>Frameworks:</b></small>
               <div class="form-group">
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="angular"
-                    (change)="filter()"
-                    name="angular"
-                  />
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="angular"
+                    (change)="filter()" name="angular" />
                   <label for="" class="form-check-label small">Angular</label>
                 </div>
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="springboot"
-                    (change)="filter()"
-                    name="springboot"
-                  />
-                  <label for="" class="form-check-label small"
-                    >Spring Boot</label
-                  >
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="springboot"
+                    (change)="filter()" name="springboot" />
+                  <label for="" class="form-check-label small">Spring Boot</label>
                 </div>
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="nodejs"
-                    (change)="filter()"
-                    name="nodejs"
-                  />
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="nodejs"
+                    (change)="filter()" name="nodejs" />
                   <label for="" class="form-check-label small">NodeJS</label>
                 </div>
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="bootstrap"
-                    (change)="filter()"
-                    name="bootstrap"
-                  />
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="bootstrap"
+                    (change)="filter()" name="bootstrap" />
                   <label for="" class="form-check-label small">Bootstrap</label>
                 </div>
 
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="expressjs"
-                    (change)="filter()"
-                    name="expressjs"
-                  />
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="expressjs"
+                    (change)="filter()" name="expressjs" />
                   <label for="" class="form-check-label small">ExpressJS</label>
                 </div>
               </div>
@@ -140,33 +77,18 @@
               <small><b>Databases:</b></small>
               <div class="form-group">
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="postgresql"
-                    (change)="filter()"
-                    name="postgresql"
-                  />
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="postgresql"
+                    (change)="filter()" name="postgresql" />
                   <label class="form-check-label small">PostgreSQL</label>
                 </div>
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="mysql"
-                    (change)="filter()"
-                    name="mysql"
-                  />
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="mysql"
+                    (change)="filter()" name="mysql" />
                   <label class="form-check-label small">MySQL</label>
                 </div>
                 <div class="form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input position-static me-2"
-                    [(ngModel)]="phpmyadmin"
-                    (change)="filter()"
-                    name="phpmyadmin"
-                  />
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="phpmyadmin"
+                    (change)="filter()" name="phpmyadmin" />
                   <label class="form-check-label small">PHPMyAdmin</label>
                 </div>
               </div>
@@ -178,11 +100,8 @@
   </div>
 
   <div class="row">
-    <div
-      *ngFor="let portfolioCard of portfolioCard"
-      class="col-lg-4 col-md-6 mb-4"
-      style="max-width: 380px; min-width: 380px"
-    >
+    <div *ngFor="let portfolioCard of portfolioCard" class="col-lg-4 col-md-6 mb-4"
+      style="max-width: 380px; min-width: 380px">
       <app-project-card [project]="portfolioCard"></app-project-card>
     </div>
   </div>
