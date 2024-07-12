@@ -6,9 +6,12 @@
   <div class="pb-2">
     <accordion [isAnimated]="true" class="shadow">
       <accordion-group [(isOpen)]="isWorkExpOpen">
-        <button class="btn btn-warning justify-content-between d-flex w-100" accordion-heading>
+        <button
+          class="btn btn-warning justify-content-between d-flex w-100"
+          accordion-heading
+        >
           <div style="visibility: hidden">+</div>
-          <div class="btn-link" style="font-weight:bold;">Work Experience</div>
+          <div class="btn-link" style="font-weight: bold">Work Experience</div>
           <div style="width: 10.95px">
             <div *ngIf="!isWorkExpOpen" style="color: white">+</div>
             <div *ngIf="isWorkExpOpen" style="color: white">-</div>
@@ -23,44 +26,55 @@
           <h5 class="text-secondary">Febraury 2022 - January 2024</h5>
           <ul>
             <li class="mb-1">
-              Maintained and optimized web applications using Angular and JSP on
+              Maintain and optimize web applications using Angular and JSP on
               the frontend, and Java Spring Boot and Java Spring MVC on the
-              backend, integrated Oracle Database , ensuring high performance
-              and user responsiveness.
+              backend, ensuring high performance and user responsiveness.
             </li>
             <li class="mb-1">
-              Efficiently managed client requests, converting them into
+              Integrate Oracle Database into applications to enhance data
+              management and system functionality.
+            </li>
+            <li class="mb-1">
+              Efficiently manage client requests, transforming them into
               practical, functional solutions tailored to business needs.
             </li>
             <li class="mb-1">
-              Developed clean, efficient code in accordance with specifications,
-              utilizing SonarQube and Veracode to ensure best practices and code
+              Develop clean, efficient code in accordance with specifications,
+              employing SonarQube and Veracode to uphold best practices and code
               quality.
             </li>
             <li class="mb-1">
-              Collaborated closely with developers, UX designers, and analysts,
-              utilizing Microsoft Teams for communication and SVN for version
+              Collaborate closely with developers, UX designers, and analysts
+              using Microsoft Teams for communication and SVN for version
               control, ensuring seamless integration and optimal team
               performance.
             </li>
-            <li class="mb-1">
-              Proactively identified areas for improvement in existing programs
-              and develop strategic modifications to enhance system efficiency
-              and user functionality.
+            <li>
+              Identify areas for improvement in existing programs, developing
+              strategic modifications to enhance system efficiency and user
+              functionality.
             </li>
             <li>
-              Crafted detailed technical documentation utilizing Microsoft Word
-              and Google Docs, ensuring precise communication and optimal
-              knowledge transfer for reference and reporting purposes.
+              Craft detailed technical documentation using Microsoft Word and
+              Google Docs, ensuring precise communication and optimal knowledge
+              transfer for reference and reporting purposes.
+            </li>
+            <li>
+              Understand the company&#39;s current process and requirements and
+              integrating sets of data into frameworks used to develop practical
+              solutions as well as technical assistance.
             </li>
           </ul>
         </div>
       </accordion-group>
 
       <accordion-group [(isOpen)]="isEducationOpen">
-        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
           <div style="visibility: hidden">+</div>
-          <div class="btn-link" style="font-weight:bold;">Education</div>
+          <div class="btn-link" style="font-weight: bold">Education</div>
           <div style="width: 10.95px">
             <div *ngIf="!isEducationOpen" style="color: white">+</div>
             <div *ngIf="isEducationOpen" style="color: white">-</div>
@@ -68,15 +82,20 @@
         </button>
         <div style="text-align: left">
           <h2 class="mb-1">Bachelor's of Science in Computer Science</h2>
-          <h3 class="text-secondary-emphasis">Lebanese International University (LIU)</h3>
+          <h3 class="text-secondary-emphasis">
+            Lebanese International University (LIU)
+          </h3>
           <h5 class="text-secondary">Class of 2022</h5>
         </div>
       </accordion-group>
 
       <accordion-group [(isOpen)]="isCertificatesOpen">
-        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
           <div style="visibility: hidden">+</div>
-          <div class="btn-link" style="font-weight:bold;">Certificates</div>
+          <div class="btn-link" style="font-weight: bold">Certificates</div>
           <div style="width: 10.95px">
             <div *ngIf="!isCertificatesOpen" style="color: white">+</div>
             <div *ngIf="isCertificatesOpen" style="color: white">-</div>
@@ -114,7 +133,9 @@
             <li>Obtained in July 2012</li>
           </ul>
           <hr />
-          <h2 class="text-secondary-emphasis">Succeed & Achieve Learning Center</h2>
+          <h2 class="text-secondary-emphasis">
+            Succeed & Achieve Learning Center
+          </h2>
           <h3>Business English</h3>
           <ul>
             <li>Obtained in Febraury 2022</li>
@@ -123,9 +144,12 @@
       </accordion-group>
 
       <accordion-group [(isOpen)]="isSkillsOpen">
-        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
           <div style="visibility: hidden">+</div>
-          <div class="btn-link" style="font-weight:bold;">Skills</div>
+          <div class="btn-link" style="font-weight: bold">Skills</div>
           <div style="width: 10.95px">
             <div *ngIf="!isSkillsOpen" style="color: white">+</div>
             <div *ngIf="isSkillsOpen" style="color: white">-</div>
@@ -157,6 +181,7 @@
               <li>MyBatis</li>
               <li>iBATIS</li>
               <li>NodeJS</li>
+              <li>Laravel</li>
             </ul>
             <hr />
             <h3 class="text-secondary-emphasis">Databases</h3>
@@ -164,6 +189,7 @@
               <li>Oracle</li>
               <li>PostgreSQL</li>
               <li>MySQL</li>
+              <li>SQLite</li>
             </ul>
             <hr />
             <h3 class="text-secondary-emphasis">Version Control</h3>
@@ -175,9 +201,12 @@
         </div>
       </accordion-group>
       <accordion-group [(isOpen)]="isLanguagesOpen">
-        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <button
+          class="btn btn-block justify-content-between d-flex w-100"
+          accordion-heading
+        >
           <div style="visibility: hidden">+</div>
-          <div class="btn-link" style="font-weight:bold;">Languages</div>
+          <div class="btn-link" style="font-weight: bold">Languages</div>
           <div style="width: 10.95px">
             <div *ngIf="!isLanguagesOpen" style="color: white">+</div>
             <div *ngIf="isLanguagesOpen" style="color: white">-</div>

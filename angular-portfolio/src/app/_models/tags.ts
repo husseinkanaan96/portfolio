@@ -12,6 +12,8 @@ export class Tag {
     static readonly MYSQL = new Tag('MySQL', 'black');
     static readonly PHPMYADMIN = new Tag('PHPMyAdmin', 'black');
     static readonly TYPESCRIPT = new Tag('TypeScript', 'black');
+    static readonly LARAVEL = new Tag('Laravel', 'black');
+    static readonly SQLITE = new Tag('SQLite', 'black');
     
     
     private constructor(private readonly key: string, 

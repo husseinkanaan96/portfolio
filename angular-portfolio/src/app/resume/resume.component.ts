@@ -22,8 +22,8 @@ export class ResumeComponent {
   downloadFile() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '../../assets/Hussein Kanaan’s Resume.pdf');
-    link.setAttribute('download', 'Hussein Kanaan’s Resume.pdf');
+    link.setAttribute('href', '../../assets/Hussein Mohamad Ali Kanaan CV.pdf');
+    link.setAttribute('download', 'Hussein Mohamad Ali Kanaan CV.pdf');
     link.click();
     link.remove();
   }
