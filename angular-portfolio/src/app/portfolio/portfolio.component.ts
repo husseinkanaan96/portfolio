@@ -30,6 +30,7 @@ export class PortfolioComponent implements OnInit {
   typescript: boolean = false;
   laravel: boolean = false;
   sqlite: boolean = false;
+  dotnetcore: boolean = false;
 
   constructor(private titleService: Title, private projectService: ProjectsService) {
 
@@ -86,6 +87,9 @@ export class PortfolioComponent implements OnInit {
     if (this.sqlite) {
       filterTags.push(Tag.SQLITE)
     }
+    if (this.dotnetcore) {
+      filterTags.push(Tag.DOTNETCORE)
+    }
 
     if (this.typescript
       || this.phpmyadmin
@@ -102,6 +106,7 @@ export class PortfolioComponent implements OnInit {
       || this.javascript
       || this.laravel
       || this.sqlite
+      || this.dotnetcore
     ) {
       this.filtering = true;
     }
@@ -129,6 +134,7 @@ export class PortfolioComponent implements OnInit {
     this.typescript = false;
     this.laravel = false;
     this.sqlite = false;
+    this.dotnetcore;
 
     this.filtering = false;
 

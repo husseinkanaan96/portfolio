@@ -78,6 +78,12 @@
                   <label for="" class="form-check-label small">Laravel</label>
                 </div>
 
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input position-static me-2" [(ngModel)]="laravel"
+                    (change)="filter()" name="dotnetcore" />
+                  <label for="" class="form-check-label small">.NET Core</label>
+                </div>
+
               </div>
             </div>
             <div class="col">
