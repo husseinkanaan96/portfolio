@@ -12,3 +12,12 @@
     background-color: blue;
     color: white;
 }
+
+.router-outlet-container {
+    position: relative;
+  }
+  
+  .router-outlet-container > * {
+    position: absolute;
+    width: 100%;
+  }

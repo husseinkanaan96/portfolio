@@ -6,11 +6,11 @@ import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'resume', component: ResumeComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '**', component: HomeComponent, pathMatch: 'full' }
+  { path: 'home', component: HomeComponent, data: { animation: 'HomePage' } },
+  { path: 'portfolio', component: PortfolioComponent, data: { animation: 'PortfolioPage' } },
+  { path: 'resume', component: ResumeComponent, data: { animation: 'ResumePage' } },
+  { path: 'contact', component: ContactComponent, data: { animation: 'ContactPage' } },
+  { path: '**', component: HomeComponent, pathMatch: 'full', data: { animation: 'HomePage' } }
 ];
 
 @NgModule({
