@@ -1,5 +1,9 @@
-<div class="shadow-sm" [@fadeAnimation]="prepareRoute(outlet)">
+<div class="shadow-sm">
   <app-header></app-header>
   <app-navbar></app-navbar>
+  
+  <div [@fadeAnimation]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+  <app-footer></app-footer>
 </div>
-<router-outlet #outlet="outlet"></router-outlet>
