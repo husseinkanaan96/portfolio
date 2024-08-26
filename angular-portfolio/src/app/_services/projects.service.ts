@@ -38,7 +38,22 @@ export class ProjectsService {
       Tag.PHP,
       Tag.MYSQL,
       Tag.PHPMYADMIN]
+    },
+    {
+      id: 2,
+      name: 'Simple CRUD App',
+      summary: 'Dotnet-Angular CRUD',
+      description: 'Simple Dotnet-Angular Create, Read, Update, and Delete Application',
+      projectLink: 'https://github.com/husseinkanaan96/dotnet-angular-CRUD',
+      pictures: ['../../assets/dotnet CRUD/Screenshot 2024-08-26 203007.png', '../../assets/dotnet CRUD/Screenshot 2024-08-26 203014.png', '../../assets/dotnet CRUD/Screenshot 2024-08-26 203039.png'],
+      tags: [Tag.HTML,
+      Tag.CSS,
+      Tag.JAVASCRIPT,
+      Tag.ANGULAR,
+      Tag.DOTNETCORE,
+      Tag.POSTGRESQL]
     }
+
   ]
 
   constructor() { }
