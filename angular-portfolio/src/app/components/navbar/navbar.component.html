@@ -1,0 +1,40 @@
+<header class="site-header">
+  <nav class="container nav-shell" aria-label="Primary navigation">
+    <a class="brand" href="#home" (click)="closeMenu()" aria-label="Hussein Kanaan, home">
+      <span>Hussein Kanaan</span><b>.</b>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen()"
+      aria-controls="site-navigation"
+      aria-label="Toggle navigation"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <div id="site-navigation" class="nav-content" [class.is-open]="menuOpen()">
+      <div class="nav-links">
+        <a href="#about" (click)="closeMenu()">About</a>
+        <a href="#experience" (click)="closeMenu()">Experience</a>
+        <a href="#projects" (click)="closeMenu()">Projects</a>
+        <a href="#contact" (click)="closeMenu()">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button
+          class="theme-toggle"
+          type="button"
+          (click)="theme.toggle()"
+          [attr.aria-label]="theme.mode() === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
+          [title]="theme.mode() === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'"
+        >
+          <span aria-hidden="true">{{ theme.mode() === 'dark' ? '☀' : '☾' }}</span>
+        </button>
+        <a class="nav-cv" href="assets/Hussein_Mohamad_Ali_Kanaan_CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </nav>
+</header>

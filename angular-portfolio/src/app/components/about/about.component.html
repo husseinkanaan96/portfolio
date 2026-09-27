@@ -1,0 +1,41 @@
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">About me</span>
+        <h2>Development across the application stack.</h2>
+      </div>
+      <p>My recent work centres on Java, Spring Boot, integrations, databases, and production support.</p>
+    </div>
+
+    <div class="about-grid">
+      <article class="about-story">
+        <h3>What I work on</h3>
+        <p>
+          I’m a full stack developer based in Beirut. My experience includes web applications for banking and retail, omni-channel services, SWIFT payment processing, and AML screening.
+        </p>
+        <p>
+          I work with developers, UX designers, analysts, and clients to implement requirements, support integrations, deploy applications, troubleshoot production issues, and prepare technical documentation.
+        </p>
+        <ul class="work-focus" aria-label="Main areas of work">
+          <li>Backend development</li>
+          <li>System integration</li>
+          <li>Production support</li>
+        </ul>
+      </article>
+
+      <div class="skill-groups">
+        @for (group of skillGroups; track group.label) {
+          <section class="skill-group">
+            <h3>{{ group.label }}</h3>
+            <ul class="skill-list">
+              @for (skill of group.skills; track skill) {
+                <li>{{ skill }}</li>
+              }
+            </ul>
+          </section>
+        }
+      </div>
+    </div>
+  </div>
+</section>

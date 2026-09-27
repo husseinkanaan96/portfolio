@@ -1,0 +1,136 @@
+.experience-section {
+  overflow: hidden;
+}
+
+.timeline {
+  border-top: 1px solid var(--border-strong);
+}
+
+.experience-card {
+  border-bottom: 1px solid var(--border);
+}
+
+.experience-card.is-open {
+  background: var(--surface);
+}
+
+.experience-summary {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 48px 1fr 36px;
+  gap: 22px;
+  align-items: center;
+  padding: 24px 8px;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  background: transparent;
+}
+
+.experience-summary:hover .experience-title strong {
+  color: var(--primary);
+}
+
+.timeline-index {
+  color: var(--secondary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.experience-title {
+  display: grid;
+}
+
+.experience-title small {
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.experience-title strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.2rem, 2.4vw, 1.65rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  transition: color 150ms ease;
+}
+
+.experience-title span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.expand-icon {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.experience-details {
+  max-width: 960px;
+  padding: 0 36px 30px 78px;
+  animation: reveal 160ms ease both;
+}
+
+.experience-details > p {
+  max-width: 790px;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.experience-details ul {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0 24px;
+  padding-left: 19px;
+}
+
+.experience-details li {
+  padding-left: 4px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.experience-details li::marker {
+  color: var(--secondary);
+}
+
+.experience-tech {
+  margin-bottom: 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.experience-tech strong {
+  color: var(--text);
+}
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .experience-summary {
+    grid-template-columns: 30px 1fr 28px;
+    gap: 10px;
+    padding: 19px 0;
+  }
+
+  .expand-icon {
+    width: 28px;
+  }
+
+  .experience-details {
+    padding: 0 0 24px 40px;
+  }
+}

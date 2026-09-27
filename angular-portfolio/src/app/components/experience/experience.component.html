@@ -1,0 +1,45 @@
+<section id="experience" class="section experience-section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">Experience</span>
+        <h2>Professional experience</h2>
+      </div>
+      <p>My roles have covered frontend and backend development, integration, reporting, deployment, and production support.</p>
+    </div>
+
+    <div class="timeline">
+      @for (experience of experiences; track experience.id; let index = $index) {
+        <article class="experience-card" [class.is-open]="expandedId() === experience.id">
+          <button
+            type="button"
+            class="experience-summary"
+            (click)="toggle(experience.id)"
+            [attr.aria-expanded]="expandedId() === experience.id"
+            [attr.aria-controls]="experience.id + '-details'"
+          >
+            <span class="timeline-index">0{{ index + 1 }}</span>
+            <span class="experience-title">
+              <small>{{ experience.period }}</small>
+              <strong>{{ experience.role }}</strong>
+              <span>{{ experience.company }} · {{ experience.location }}</span>
+            </span>
+            <span class="expand-icon" aria-hidden="true">{{ expandedId() === experience.id ? '−' : '+' }}</span>
+          </button>
+
+          @if (expandedId() === experience.id) {
+            <div class="experience-details" [id]="experience.id + '-details'">
+              <p>{{ experience.summary }}</p>
+              <ul>
+                @for (highlight of experience.highlights; track highlight) {
+                  <li>{{ highlight }}</li>
+                }
+              </ul>
+              <p class="experience-tech"><strong>Technologies:</strong> {{ experience.technologies.join(' · ') }}</p>
+            </div>
+          }
+        </article>
+      }
+    </div>
+  </div>
+</section>
